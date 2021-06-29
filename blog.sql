@@ -29,9 +29,9 @@ CREATE TABLE comentarios
     FOREIGN KEY (post_id) REFERENCES posts(id)
 );
 
-\copy usuarios FROM '/Users/lorenzov/Desktop/Cursos/Desafio_Latam/G46/Lenguaje_de_consultas_BBDD_postgreSQL/2_Relaciones_y_operaciones_transaccionales/clases/1/usuarios.csv' csv header;
-\copy posts FROM '/Users/lorenzov/Desktop/Cursos/Desafio_Latam/G46/Lenguaje_de_consultas_BBDD_postgreSQL/2_Relaciones_y_operaciones_transaccionales/clases/1/posts.csv' csv header;
-\copy comentarios FROM '/Users/lorenzov/Desktop/Cursos/Desafio_Latam/G46/Lenguaje_de_consultas_BBDD_postgreSQL/2_Relaciones_y_operaciones_transaccionales/clases/1/comentarios.csv' csv header;
+\copy usuarios FROM 'usuarios.csv' csv header;
+\copy posts FROM 'posts.csv' csv header;
+\copy comentarios FROM 'comentarios.csv' csv header;
 
 
 SELECT email, u.id, titulo
